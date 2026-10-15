@@ -1,6 +1,17 @@
-.env
+# Переменные окружения (основной и все варианты: .env.local, .env.production, .env.bak и т.д.)
+.env*
+
+# Сертификаты и ключи
 *.pem
 *.key
+
+# База данных SQLite, журналы и бэкапы
 data/
+
+# Зависимости и сборка Vite
 node_modules/
 dist/
+
+# Загрузки пользователей через админку
+assets/products/uploads/*
+!assets/products/uploads/.gitkeep
